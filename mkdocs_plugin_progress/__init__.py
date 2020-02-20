@@ -2,7 +2,7 @@ from mkdocs.plugins import BasePlugin
 
 
 class Progress(BasePlugin):
-    pass
+    config_scheme = ()
 
 
 def _info(data):
