@@ -23,10 +23,6 @@ class Progress(BasePlugin):
     def on_config(self, *args, **kwargs):
         _info("Loaded configuration.")
 
-    def on_env(self, *args, **kwargs):
-        _info("Created templating engine contexts.")
-        return kwargs["env"]
-
     def on_post_build(self):
         _info("Finishing up...")
 
@@ -40,4 +36,6 @@ class Progress(BasePlugin):
 
 
 def _info(data):
+    """Outputs a message in the same style MkDocs does."""
+
     print("INFO    -  {}".format(data))
