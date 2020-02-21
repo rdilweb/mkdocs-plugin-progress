@@ -1,3 +1,7 @@
 # mkdocs-plugin-progress
 
-A MkDocs plugin that lets you know exactly what is happening during the build.
+A plugin for MkDocs that lets you know exactly what is happening during the build.
+
+## License
+
+Apache 2.0, see [LICENSE](./LICENSE).

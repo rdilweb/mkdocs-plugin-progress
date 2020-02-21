@@ -36,7 +36,7 @@ class Progress(BasePlugin):
 
     def on_page_read_source(self, *args, **kwargs):
         _info("Processing page \"{}\"...".format(kwargs["page"].file.src_path))
-        return kwargs["page"]
+        return None
 
 
 def _info(data):
