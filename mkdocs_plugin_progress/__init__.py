@@ -20,23 +20,23 @@ from mkdocs.plugins import BasePlugin
 class Progress(BasePlugin):
     config_scheme = ()
 
-    def on_config(self, config):
+    def on_config(self, *args, **kwargs):
         _info("Loaded configuration.")
 
-    def on_env(self, env, config, site_navigation):
+    def on_env(self, *args, **kwargs):
         _info("Created templating engine contexts.")
-        return env
+        return kwargs["env"]
 
     def on_post_build(self):
         _info("Finishing up...")
 
-    def on_template_context(self, context, template_name, config):
-        _info("Contextualized {}.".format(template_name))
-        return context
-    
-    def on_page_read_source(self, page, config):
-        _info("Processing page \"{}\"...".format(page.name))
-        return page
+    def on_template_context(self, *args, **kwargs):
+        _info("Contextualized {}.".format(kwargs["template_name"]))
+        return kwargs["context"]
+
+    def on_page_read_source(self, *args, **kwargs):
+        _info("Processing page \"{}\"...".format(kwargs["page"].name))
+        return kwargs["page"]
 
 
 def _info(data):
