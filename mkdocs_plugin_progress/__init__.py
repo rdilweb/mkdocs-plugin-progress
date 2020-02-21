@@ -23,7 +23,7 @@ class Progress(BasePlugin):
     def on_config(self, *args, **kwargs):
         _info("Loaded configuration.")
 
-    def on_post_build(self):
+    def on_post_build(self, *args, **kwargs):
         _info("Finishing up...")
 
     def on_template_context(self, *args, **kwargs):
