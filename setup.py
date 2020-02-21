@@ -9,7 +9,7 @@ URLs = \
 
 setuptools.setup(
     name="mkdocs-plugin-progress",
-    version="1.0.0",
+    version="1.0.1",
     packages=setuptools.find_packages(),
     description="A MkDocs plugin that lets you know exactly what is happening during the build.",
     keywords=["mkdocs", "plugin", "progress", "build", "debugging"],
@@ -23,7 +23,7 @@ setuptools.setup(
     },
     long_description=open("README.md", "r").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/rdilweb/mkdocs-progress-plugin",
+    url="https://github.com/rdilweb/mkdocs-plugin-progress",
     python_requires=">=3.3",
     include_package_data=True,
     project_urls=URLs,
