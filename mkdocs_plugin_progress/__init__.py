@@ -27,8 +27,8 @@ class Progress(BasePlugin):
         _info("Finishing up...")
 
     def on_template_context(self, *args, **kwargs):
-        _info("Contextualized {}.".format(kwargs["template_name"]))
-        return kwargs["context"]
+        _info("Contextualized template {}.".format(kwargs["template_name"]))
+        return None
 
     def on_page_read_source(self, *args, **kwargs):
         _info("Processing page \"{}\"...".format(kwargs["page"].file.src_path))
