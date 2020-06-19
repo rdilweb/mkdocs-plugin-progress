@@ -26,6 +26,9 @@ class Progress(BasePlugin):
     def on_post_build(self, *args, **kwargs):
         _info("Finishing up...")
 
+    def on_post_page(self, *args, **kwargs):
+        _info("Writing file \"{}\"...".format(kwargs["page"].file.src_path.replace(".md", ".html")))
+
     def on_template_context(self, *args, **kwargs):
         _info("Contextualized template {}.".format(kwargs["template_name"]))
         return None

@@ -9,7 +9,7 @@ URLs = \
 
 setuptools.setup(
     name="mkdocs-plugin-progress",
-    version="1.1.4",
+    version="1.1.5",
     packages=setuptools.find_packages(),
     description="A plugin for MkDocs that lets you know exactly what is happening during the build.",
     keywords=["mkdocs", "plugin", "progress", "build", "debugging"],
