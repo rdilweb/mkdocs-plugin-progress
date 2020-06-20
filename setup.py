@@ -1,15 +1,14 @@
 import setuptools
 
-URLs = \
-    {
-        "Bug Tracker": "https://github.com/rdilweb/mkdocs-plugin-progress/issues",
-        "Source Code": "https://github.com/rdilweb/mkdocs-plugin-progress",
-        "License": "https://github.com/rdilweb/mkdocs-plugin-progress/blob/master/LICENSE",
-    }
+URLs = {
+    "Bug Tracker": "https://github.com/rdilweb/mkdocs-plugin-progress/issues",
+    "Source Code": "https://github.com/rdilweb/mkdocs-plugin-progress",
+    "License": "https://github.com/rdilweb/mkdocs-plugin-progress/blob/master/LICENSE",
+}
 
 setuptools.setup(
     name="mkdocs-plugin-progress",
-    version="1.1.5",
+    version="1.2.0",
     packages=setuptools.find_packages(),
     description="A plugin for MkDocs that lets you know exactly what is happening during the build.",
     keywords=["mkdocs", "plugin", "progress", "build", "debugging"],
